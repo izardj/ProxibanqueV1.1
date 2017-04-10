@@ -19,7 +19,7 @@ public abstract class DaoConnexion {
 	private static final String URL = "jdbc:mysql://localhost:3306/proxibanque";
 	private static final String UTILISATEUR = "root";
 	private static final String MDP = "";
-	private static Connection conn;
+	private static Connection conn = null;
 
 	public static Connection getConnexion() {
 		if (conn == null) {

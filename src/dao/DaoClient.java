@@ -48,6 +48,9 @@ public class DaoClient implements IDaoCRUD<Client> {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		finally {
+			DaoConnexion.closeConnexion();
+		}
 		return clients;
 	}
 

@@ -42,12 +42,34 @@
 	</nav>
 
 	<div class="container-fluid">
+		<div class="col-sm-3 col-md-2 sidebar">
+			<ul class="nav nav-sidebar">
+				<li class="active"><a href="#">Overview <span
+						class="sr-only">(current)</span></a></li>
+				<li><a href="#">Reports</a></li>
+				<li><a href="#">Analytics</a></li>
+				<li><a href="#">Export</a></li>
+			</ul>
+			<ul class="nav nav-sidebar">
+				<li><a href="">Nav item</a></li>
+				<li><a href="">Nav item again</a></li>
+				<li><a href="">One more nav</a></li>
+				<li><a href="">Another nav item</a></li>
+				<li><a href="">More navigation</a></li>
+			</ul>
+			<ul class="nav nav-sidebar">
+				<li><a href="">Nav item again</a></li>
+				<li><a href="">One more nav</a></li>
+				<li><a href="">Another nav item</a></li>
+			</ul>
+		</div>
+		<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+			<h1 class="page-header">Dashboard</h1>
+			<h2 class="sub-header">Ajouter un client</h2>
 
-		<h2 class="sub-header">Ajouter un client</h2>
-
-		<form class="form-horizontal" method="post" action="client-ajouter">
-			<fieldset>
-				<legend>Informations personnelles</legend>
+			<form class="form-horizontal" method="post" action="client-ajouter">
+				<fieldset>
+					<legend>Informations personnelles</legend>
 					<div class="form-group">
 						<label for="nom" class="col-sm-2 control-label">Nom</label>
 						<div class="col-sm-10">
@@ -62,9 +84,9 @@
 								placeholder="Prénom" name="prenom" />
 						</div>
 					</div>
-			</fieldset>
-			<fieldset>
-				<legend>Coordonnées</legend>
+				</fieldset>
+				<fieldset>
+					<legend>Coordonnées</legend>
 					<div class="form-group">
 						<label for="rue" class="col-sm-2 control-label">Rue</label>
 						<div class="col-sm-10">
@@ -80,7 +102,8 @@
 						</div>
 					</div>
 					<div class="form-group">
-						<label for="codepostal" class="col-sm-2 control-label">Code postal</label>
+						<label for="codepostal" class="col-sm-2 control-label">Code
+							postal</label>
 						<div class="col-sm-10">
 							<input type="text" class="form-control" id="codepostal"
 								placeholder="Code postal" name="codepostal" />
@@ -93,13 +116,20 @@
 								placeholder="Téléphone" name="telephone" />
 						</div>
 					</div>
-			</fieldset>
-			<div class="form-group">
-				<div class="col-sm-offset-2 col-sm-10">
-					<button type="submit" class="btn btn-default">Ajouter</button>
+				</fieldset>
+				<div class="form-group">
+					<div class="col-sm-offset-2 col-sm-10">
+						<button type="submit" class="btn btn-default">Ajouter</button>
+					</div>
 				</div>
-			</div>
-		</form>
+			</form>
+		</div>
 	</div>
+
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
